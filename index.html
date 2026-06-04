@@ -9,9 +9,9 @@
 <style>
 
 :root{
-    --blue:#006db2;
-    --orange:#f28c34;
-    --border:#e5e5e5;
+    --blue:#0068b3;
+    --orange:#f28c35;
+    --border:#e6e6e6;
     --cell:#f7f7f7;
 }
 
@@ -23,23 +23,24 @@
 
 body{
     background:#ffffff;
-    font-family:"Times New Roman", Times, serif;
+    font-family: Cambria, "Times New Roman", serif;
+    color:#000;
 }
 
 .wrapper{
     width:100%;
     max-width:1000px;
-    margin:auto;
+    margin:0 auto;
     background:#fff;
 }
 
 .logo{
-    padding:18px 15px;
+    padding:14px 12px;
     background:#fff;
 }
 
 .logo img{
-    width:90px;
+    width:85px;
     display:block;
 }
 
@@ -47,22 +48,20 @@ body{
     background:var(--orange);
     color:#fff;
     text-align:center;
-    font-weight:bold;
+    font-family: Cambria, "Times New Roman", serif;
+    font-weight:700;
     font-size:34px;
     line-height:1.08;
-    padding:10px 15px;
-    border-top:3px solid #fff;
-    border-bottom:3px solid #fff;
+    padding:10px 14px;
 }
 
 table{
     width:100%;
-    border-collapse:separate;
-    border-spacing:0;
+    border-collapse:collapse;
 }
 
 td{
-    border:2px solid var(--border);
+    border:1px solid var(--border);
 }
 
 .label{
@@ -70,24 +69,31 @@ td{
     background:var(--blue);
     color:#fff;
     text-align:center;
-    font-weight:bold;
-    font-size:30px;
-    line-height:1.05;
-    padding:12px 8px;
     vertical-align:middle;
+
+    font-family: Cambria, "Times New Roman", serif;
+    font-weight:700;
+    font-size:28px;
+    line-height:1.1;
+
+    padding:12px 8px;
 }
 
 .value{
     background:var(--cell);
     color:#000;
-    font-size:32px;
-    line-height:1.12;
-    padding:10px 12px;
     vertical-align:top;
+
+    font-family: Cambria, "Times New Roman", serif;
+    font-weight:400;
+    font-size:28px;
+    line-height:1.2;
+
+    padding:10px 12px;
 }
 
 .scope{
-    line-height:1.15;
+    line-height:1.2;
 }
 
 .status{
@@ -98,25 +104,23 @@ td{
 @media (max-width:768px){
 
     .company-title{
-        font-size:26px;
-        padding:10px;
+        font-size:24px;
     }
 
     .label{
-        width:35%;
-        font-size:22px;
+        font-size:18px;
     }
 
     .value{
-        font-size:22px;
+        font-size:18px;
     }
 }
 
-/* HP seperti screenshot */
+/* Mobile */
 @media (max-width:480px){
 
     .logo{
-        padding:12px;
+        padding:10px;
     }
 
     .logo img{
@@ -124,29 +128,31 @@ td{
     }
 
     .company-title{
-        font-size:19px;
-        padding:8px;
-        line-height:1.1;
+        font-size:18px;
+        line-height:1.15;
+        padding:8px 10px;
     }
 
     .label{
         width:35%;
-        font-size:14px;
+        font-size:13px;
+        font-weight:700;
+        line-height:1.15;
         padding:8px 4px;
     }
 
     .value{
         font-size:13px;
+        font-weight:400;
+        line-height:1.25;
         padding:8px;
-        line-height:1.2;
     }
 }
 
-/* HP kecil */
 @media (max-width:360px){
 
     .company-title{
-        font-size:17px;
+        font-size:16px;
     }
 
     .label{
@@ -211,30 +217,48 @@ td{
         </tr>
 
         <tr>
-            <td class="label">Standard</td>
-            <td class="value">ISO/IEC 27001:2022</td>
+            <td class="label">
+                Standard
+            </td>
+            <td class="value">
+                ISO/IEC 27001:2022
+            </td>
         </tr>
 
         <tr>
             <td class="label">
                 Accreditation<br>Symbol
             </td>
-            <td class="value">UKAS</td>
+            <td class="value">
+                UKAS
+            </td>
         </tr>
 
         <tr>
-            <td class="label">Issue Date</td>
-            <td class="value">06 November 2023</td>
+            <td class="label">
+                Issue Date
+            </td>
+            <td class="value">
+                06 November 2023
+            </td>
         </tr>
 
         <tr>
-            <td class="label">Expires Date</td>
-            <td class="value">06 November 2026</td>
+            <td class="label">
+                Expires Date
+            </td>
+            <td class="value">
+                06 November 2026
+            </td>
         </tr>
 
         <tr>
-            <td class="label">Status</td>
-            <td class="value status">Valid</td>
+            <td class="label">
+                Status
+            </td>
+            <td class="value status">
+                Valid
+            </td>
         </tr>
 
     </table>
